@@ -2,31 +2,103 @@
 <html>
 <head>
     <style>
-        body{
+    body{
         background-image:url("background3.png");
         background-repeat: no-repeat;
         background-attachment:scroll;
         background-size: cover;
         
     }
+
     h1{
-        font-size:50px;
-        display:flex;
+        font-size: 50px;
+        display: flex;
         justify-content: center;
     }
+
     .container{
-        margin-top:200px;
-        display:grid;
+        margin-top: 200px;
+        display: grid;
         grid-template-columns: 50% 50%;
     }
+
     p{
         font-size: 30px;
     }
+
     button{
-        font-size:30px;
-        margin-left:550px;
+        font-size: 30px;
+        margin-left: 550px;
     }
-    </style>
+
+    /* Media Query for Mobile Devices */
+    @media only screen and (max-width: 600px) {
+        h1 {
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            margin-top: 100px;
+        }
+
+        p {
+            font-size: 20px;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        button {
+            font-size: 20px;
+            margin: 20px auto 0 auto;
+            display: block;
+        }
+    }
+
+    /* Media Query for Tablet Devices */
+    @media only screen and (min-width: 601px) and (max-width: 1024px) {
+        h1 {
+            font-size: 40px;
+        }
+
+        .container {
+            margin-top: 150px;
+        }
+
+        p {
+            font-size: 25px;
+            margin-left: 20px;
+        }
+
+        button {
+            font-size: 25px;
+            margin-left: 100px;
+        }
+    }
+
+    /* Media Query for Desktop/Laptop Devices */
+    @media only screen and (min-width: 1025px) {
+        h1 {
+            font-size: 50px;
+        }
+
+        .container {
+            margin-top: 200px;
+        }
+
+        p {
+            font-size: 30px;
+        }
+
+        button {
+            font-size: 30px;
+            margin-left: 550px;
+        }
+    }
+</style>
+
 </head>
 <body>
     <h1>OUR SERVICES</h1>
